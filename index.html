@@ -1,13 +1,306 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBJensen-Consulting</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MBJensen-Consulting</title>
+
+<style>
+:root{
+    --primary:#0078D4;
+    --dark:#1b1b1b;
+    --light:#f5f7fa;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, Arial, sans-serif;
+    background:var(--light);
+    color:#333;
+    line-height:1.6;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0078D4,#005A9E);
+    color:white;
+    padding:80px 20px;
+}
+
+.hero-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:50px;
+}
+
+.hero-text{
+    flex:2;
+    min-width:300px;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:1.2rem;
+}
+
+.hero-image{
+    flex:1;
+    min-width:250px;
+    text-align:center;
+}
+
+.profile-placeholder{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:white;
+    color:#0078D4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-weight:bold;
+    border:6px solid rgba(255,255,255,0.3);
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.section{
+    margin-bottom:70px;
+}
+
+.section h2{
+    color:var(--primary);
+    margin-bottom:25px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#0078D4;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+.contact{
+    background:#0078D4;
+    color:white;
+    padding:40px;
+    border-radius:12px;
+}
+
+.contact h2{
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#f0f0f0;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    background:white;
+    color:#0078D4;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+
 </head>
+
 <body>
-    <h1>MBJensen-Consulting</h1>
-    <p>Microsoft 365 • SharePoint • Governance</p>
-    <p>Under opbygning 🚀</p>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+            <h1>Mads Bo Jensen</h1>
+
+            <p>
+                Freelance Microsoft 365-konsulent med fokus på
+                SharePoint, Governance og Datamigrering.
+            </p>
+            
+                Kontakt mig
+            </a>
+        </div>
+
+        <div class="hero-image">
+
+            <!-- Erstat senere med dit foto -->
+
+            <div class="profile-placeholder">
+                DIT FOTO
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <section class="section">
+
+        <h2>Det hjælper jeg med</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>SharePoint & Intranet</h3>
+                <p>
+                    Struktur, governance, ejerskab,
+                    intranet og moderne samarbejdsløsninger.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Microsoft 365</h3>
+                <p>
+                    Administration, sikkerhed,
+                    governance og modern workplace.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Datamigrering</h3>
+                <p>
+                    Migrering fra filservere og ældre
+                    SharePoint-løsninger til Microsoft 365.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Automation</h3>
+                <p>
+                    PowerShell, Microsoft Graph
+                    og automatisering af manuelle processer.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Om mig</h2>
+
+        <p>
+            Jeg arbejder som selvstændig IT-konsulent med fokus på
+            Microsoft 365, SharePoint, Governance,
+            datamigrering og automatisering.
+        </p>
+
+        <br>
+
+        <p>
+            Min erfaring spænder fra drift og support til
+            governance, arkitektur og større migreringsprojekter.
+            Målet er altid at levere løsninger, der både fungerer
+            teknisk og giver forretningsmæssig værdi.
+        </p>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Kompetencer</h2>
+
+        <div class="skills">
+
+            <div class="skill">Microsoft 365</div>
+            <div class="skill">SharePoint Online</div>
+            <div class="skill">Teams</div>
+            <div class="skill">Intune</div>
+            <div class="skill">Entra ID</div>
+            <div class="skill">PowerShell</div>
+            <div class="skill">Microsoft Graph</div>
+            <div class="skill">Datamigrering</div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="kontakt">
+
+        <h2>Kontakt</h2>
+
+        <p>
+            MBJensen-Consulting
+        </p>
+
+        <br>
+
+        <p>
+            Kontakt mig for en uforpligtende dialog
+            om dit næste Microsoft 365-projekt.
+        </p>
+
+        <br>
+
+        <p>
+            E-mail: kontakt@mbjensen-consulting.dk
+        </p>
+
+    </section>
+
+</div>
+
+<footer>
+
+    MBJensen-Consulting<br>
+    Microsoft 365 | SharePoint | Governance | Datamigrering
+
+</footer>
+
 </body>
 </html>
